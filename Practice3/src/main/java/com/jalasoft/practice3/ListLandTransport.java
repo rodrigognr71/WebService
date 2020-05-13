@@ -24,6 +24,6 @@ public class ListLandTransport {
         //String[] strings = landList.stream().toArra(size -> new String[size]);
         //String[] strings = landList.toArray(new String[landList.size()]);
         //Land strings = landList.get(0);
-        landList.stream().forEach(data ->System.out.println(data));
+        landList.stream().forEach(data ->System.out.println(data.displayData()));
     }
 }

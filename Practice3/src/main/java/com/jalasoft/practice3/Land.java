@@ -10,7 +10,7 @@
  */
 package com.jalasoft.practice3;
 
-public class Land extends Transport {
+public abstract class Land extends Transport {
 
     private boolean hasMotor;
 
@@ -19,7 +19,8 @@ public class Land extends Transport {
         this.hasMotor = hasMotor;
     }
 
-    public String displayData() {
-        return "It is a land transport";
+    public String displayData(){
+        //return "name = " + getName() + " price= " + getPrice() + " hasMotor = " + hasMotor;
+        return String.format("name =  %s, price = %s, hasMotor = %s", getName(), getPrice(), hasMotor);
     }
 }

@@ -21,6 +21,6 @@ public class Car extends Land {
     }
 
     public String displayData(){
-        return "It has four wheels";
+        return super.displayData() + String.format(", useGas = %s", useGas);
     }
 }

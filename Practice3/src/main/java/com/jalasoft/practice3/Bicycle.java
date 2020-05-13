@@ -21,6 +21,6 @@ public class Bicycle extends Land{
 
     @Override
     public String displayData() {
-        return "It has 2 wheels";
+        return super.displayData() + String.format(", exerciseBike = %s", exerciseBike);
     }
 }
